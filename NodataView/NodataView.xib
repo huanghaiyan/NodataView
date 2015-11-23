@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="Nodata View" customClass="NodataView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5hz-60-f4d">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="networkRequestFail_.png" translatesAutoresizingMaskIntoConstraints="NO" id="58a-S5-uh1">
+                            <rect key="frame" x="115" y="136" width="90" height="90"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="90" id="AwO-cT-hXZ"/>
+                                <constraint firstAttribute="height" constant="90" id="Sze-pk-KXQ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="网络请求失败" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VZQ-EM-Pwi">
+                            <rect key="frame" x="99" y="242" width="122" height="21"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="fjX-QR-VJj"/>
+                                <constraint firstAttribute="width" constant="122" id="q4y-f5-QVs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请检查您的网络重新加载吧" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCQ-lT-wCv">
+                            <rect key="frame" x="111" y="271" width="99" height="41"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="99" id="MzT-Sw-YfE"/>
+                                <constraint firstAttribute="height" constant="41" id="v5v-Tp-rSg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.71764520198080817" green="0.71764520198080817" blue="0.71764520198080817" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9JJ-fY-0kZ">
+                            <rect key="frame" x="113" y="320" width="94" height="30"/>
+                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="94" id="Jy6-AE-HIl"/>
+                                <constraint firstAttribute="height" constant="30" id="YbG-h2-0qR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <state key="normal" title="重新加载">
+                                <color key="titleColor" red="0.47735164141414144" green="0.47735164141414144" blue="0.47735164141414144" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.96772411619999998" green="0.96772411619999998" blue="0.96772411619999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="VZQ-EM-Pwi" firstAttribute="centerX" secondItem="5hz-60-f4d" secondAttribute="centerX" id="P5k-Mr-5SX"/>
+                        <constraint firstItem="58a-S5-uh1" firstAttribute="centerX" secondItem="5hz-60-f4d" secondAttribute="centerX" id="RPW-LW-oqB"/>
+                        <constraint firstItem="58a-S5-uh1" firstAttribute="top" secondItem="5hz-60-f4d" secondAttribute="top" constant="136" id="eal-xP-u9r"/>
+                        <constraint firstItem="VZQ-EM-Pwi" firstAttribute="top" secondItem="58a-S5-uh1" secondAttribute="bottom" constant="16" id="j8E-Jh-GeV"/>
+                        <constraint firstItem="9JJ-fY-0kZ" firstAttribute="top" secondItem="YCQ-lT-wCv" secondAttribute="bottom" constant="8" id="jzN-FJ-s7u"/>
+                        <constraint firstItem="9JJ-fY-0kZ" firstAttribute="centerX" secondItem="5hz-60-f4d" secondAttribute="centerX" id="k93-Sc-PKj"/>
+                        <constraint firstItem="YCQ-lT-wCv" firstAttribute="top" secondItem="VZQ-EM-Pwi" secondAttribute="bottom" constant="8" id="rFZ-Is-9eI"/>
+                        <constraint firstItem="YCQ-lT-wCv" firstAttribute="centerX" secondItem="5hz-60-f4d" secondAttribute="centerX" id="z7s-kc-Jxz"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="5hz-60-f4d" secondAttribute="bottom" id="763-Pv-7Uq"/>
+                <constraint firstItem="5hz-60-f4d" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="QNW-rf-YI8"/>
+                <constraint firstItem="5hz-60-f4d" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="svk-D0-qLl"/>
+                <constraint firstAttribute="trailing" secondItem="5hz-60-f4d" secondAttribute="trailing" id="w0p-sj-EZA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <connections>
+                <outlet property="NoDataImageView" destination="58a-S5-uh1" id="FVC-Ng-nnI"/>
+                <outlet property="actionButton" destination="9JJ-fY-0kZ" id="aqR-wf-xtC"/>
+                <outlet property="checkLabel" destination="YCQ-lT-wCv" id="jYX-nZ-YNh"/>
+                <outlet property="nodataLabel" destination="VZQ-EM-Pwi" id="eBQ-sV-hmk"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="networkRequestFail_.png" width="95" height="95"/>
+    </resources>
+</document>
